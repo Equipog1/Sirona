@@ -19,11 +19,11 @@ return new class extends Migration
             $table->double('cpr_precio_costo')->nullable();
             $table->double('cpr_precio_venta')->nullable();
 
-            $table->foreignId('id_proveedor')
-                ->nullable()
-                ->constrained('provider')
-                ->cascadeOnUpdate()
-                ->nullOnDelete();
+            // $table->foreignId('id_proveedor')
+            //     ->nullable()
+            //     ->constrained('provider')
+            //     ->cascadeOnUpdate()
+            //     ->nullOnDelete();
 
                 $table->foreignId('id_producto')
                 ->nullable()
@@ -31,11 +31,11 @@ return new class extends Migration
                 ->cascadeOnUpdate()
                 ->nullOnDelete();
 
-                $table->foreignId('id_categoria')
-                ->nullable()
-                ->constrained('category')
-                ->cascadeOnUpdate()
-                ->nullOnDelete();
+                // $table->foreignId('id_categoria')
+                // ->nullable()
+                // ->constrained('category')
+                // ->cascadeOnUpdate()
+                // ->nullOnDelete();
 
         });
     }

@@ -42,4 +42,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function users(){  /*como se llama la tabla de la relacion*/
+        return $this->hasMany(User::class, 'id'); /* se pne el nombre del modelo */
+    }
 }
